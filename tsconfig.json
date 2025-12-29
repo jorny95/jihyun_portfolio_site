@@ -27,7 +27,9 @@
     /* 타입 정의 명시 */
     "types": [
       "react",
-      "react-dom"
+      "react-dom",
+      "node", // ← path 모듈 인식
+      "vite/client" // ← 이미지 import 인식
     ]
   },
   "include": [
