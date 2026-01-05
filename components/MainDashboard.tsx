@@ -12,20 +12,18 @@ interface MainDashboardProps {
 
 const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, onCardClick, onMenuToggle }) => {
   return (
-    <div className="flex-1 flex flex-col min-w-0 bg-[#F9F7F2] overflow-y-auto custom-scrollbar pb-24 md:pb-8">
-      {/* Header */}
-      <div className="p-4 md:p-6 flex flex-col md:flex-row md:items-center justify-between sticky top-0 bg-[#F9F7F2]/80 backdrop-blur-md z-20 gap-4 border-b border-black/5">
+    <div className="flex-1 flex flex-col min-w-0 bg-[#F9F7F2]">
+      {/* Header: 이 영역만 상단에 고정됩니다 */}
+      <div className="hidden md:flex p-4 md:p-6 flex-col md:flex-row md:items-center justify-between sticky top-0 bg-[#F9F7F2]/80 backdrop-blur-md z-20 gap-4 border-b border-black/5">
         <div className="flex items-center space-x-2 md:space-x-4">
-          {/* Hamburger Menu - Visible on MD and SM */}
           <button
             onClick={onMenuToggle}
             className="lg:hidden p-2 border-2 border-[#1a1a1a] rounded-xl bg-white hover:bg-gray-100 transition-colors shadow-[2px_2px_0px_#000]"
           >
             <Menu size={20} className="text-black" />
           </button>
-
-
         </div>
+
         <div className="flex items-center space-x-2 overflow-x-auto pb-2 md:pb-0 no-scrollbar">
           {['Coding', 'Economics', 'Fintech', 'Education'].map((tag) => (
             <span key={tag} className="whitespace-nowrap px-3 py-1 bg-white border-2 border-[#1a1a1a] rounded-full text-[10px] font-black text-black shadow-[1px_1px_0px_#1a1a1a]">
@@ -35,7 +33,7 @@ const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, 
         </div>
       </div>
 
-      <div className="px-4 md:px-8 pb-12">
+      <div className="px-4 md:px-8 pb-32">
         {/* Hero Section with Interactive Cubes */}
         <div className="w-full h-[240px] md:h-[320px] bg-white border-2 border-[#1a1a1a] rounded-[24px] md:rounded-[40px] mt-4 md:mt-0 mb-8 overflow-hidden relative shadow-[6px_6px_0px_#1a1a1a]">
           <iframe

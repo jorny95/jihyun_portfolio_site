@@ -62,10 +62,10 @@ const App: React.FC = () => {
         />
 
         {/* Main Content Area */}
-        <div className="flex-1 flex flex-col min-w-0 overflow-hidden relative">
+        <div className="flex-1 overflow-y-auto custom-scrollbar">
 
-          {/* Mobile RightPanel content at TOP - Fixed height, no scroll */}
-          <div className="block md:hidden border-b-2 border-black bg-white shrink-0 overflow-hidden">
+          {/* 1. 모바일 프로필 영역: 이제 헤더보다 위에 위치하며 스크롤 시 올라갑니다 */}
+          <div className="block md:hidden border-b-2 border-black bg-white shrink-0">
             <RightPanel isMobileTop />
           </div>
 
