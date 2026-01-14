@@ -69,12 +69,25 @@ const App: React.FC = () => {
             <RightPanel isMobileTop />
           </div>
 
-          <MainDashboard
-            activeView={activeView}
-            experiences={experiences}
-            onCardClick={(exp) => setSelectedExp(exp)}
-            onMenuToggle={() => setIsSidebarOpen(true)}
-          />
+          {/* activeView에 따른 조건부 렌더링 */}
+          {activeView === 'Overview' ? (
+            <MainDashboard
+              activeView={activeView}
+              experiences={experiences}
+              onCardClick={(exp) => setSelectedExp(exp)}
+              onMenuToggle={() => setIsSidebarOpen(true)}
+            />
+          ) : (
+            <div className="p-8 md:p-12 min-h-full bg-[#F9F7F2]">
+              {/* 새로운 페이지 내용이 들어갈 빈 공간 */}
+              <h2 className="text-4xl font-black text-black uppercase italic mb-4">{activeView}</h2>
+              <div className="w-full h-[60vh] border-4 border-dashed border-black/10 rounded-[40px] flex items-center justify-center">
+                <p className="font-bold text-black/20 text-xl uppercase tracking-widest">
+                  {activeView} content goes here...
+                </p>
+              </div>
+            </div>
+          )}
 
           {/* Mobile Footer Nav */}
           <div className="block md:hidden">
