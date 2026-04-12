@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import MainDashboard from './components/MainDashboard';
+import AboutPage from './components/AboutPage';
 import RightPanel from './components/RightPanel';
 import ExperienceModal from './components/ExperienceModal';
 import MobileNav from './components/MobileNav';
@@ -41,7 +42,7 @@ const experiences: Experience[] = [
 ];
 
 const App: React.FC = () => {
-  const [activeView, setActiveView] = useState<ViewType>('Overview');
+  const [activeView, setActiveView] = useState<ViewType>('About');
   const [selectedExp, setSelectedExp] = useState<Experience | null>(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -77,6 +78,8 @@ const App: React.FC = () => {
               onCardClick={(exp) => setSelectedExp(exp)}
               onMenuToggle={() => setIsSidebarOpen(true)}
             />
+          ) : activeView === 'About' ? (
+            <AboutPage />
           ) : (
             <div className="p-8 md:p-12 min-h-full bg-[#F9F7F2]">
               {/* 새로운 페이지 내용이 들어갈 빈 공간 */}
