@@ -4,6 +4,7 @@ import { Award, GraduationCap, MapPin, ExternalLink, X, Mail, Copy, Check } from
 import gachonLogo from '../assets/images/gachon_logo.jpg';
 import kyungilLogo from '../assets/images/kyungil_logo.jpeg';
 import jihyunProfile from '../assets/images/jihyun.jpg';
+import githubIcon from '../assets/images/gihub_icon.svg';
 
 interface RightPanelProps {
   isMobileTop?: boolean;
@@ -203,6 +204,27 @@ const RightPanel: React.FC<RightPanelProps> = ({ isMobileTop }) => {
           </div>
         </div>
       </div>
+
+      {/* Education Background */}
+      <h5 className="font-black text-lg text-black mb-4 flex items-center gap-2">
+        Github
+      </h5>
+
+      {/* University Card */}
+      <a href="https://github.com/jorny95" target="_blank" className="cursor-pointer retro-card bg-orange-50 p-5 rounded-[32px] mb-4 border-2 border-black shadow-[4px_4px_0px_#000]">
+        <div className="flex items-center gap-4">
+          <div className="w-14 h-14 bg-white rounded-2xl border-2 border-black shadow-[2px_2px_0px_#1a1a1a] p-2 flex items-center justify-center shrink-0">
+            <img
+              src={githubIcon}
+              alt="Gachon University"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="min-w-0">
+            <div className="font-black text-base text-black leading-tight uppercase tracking-tight">Github Profile</div>
+          </div>
+        </div>
+      </a>
 
       {/* Education Background */}
       <h5 className="font-black text-lg text-black mb-4 flex items-center gap-2">
