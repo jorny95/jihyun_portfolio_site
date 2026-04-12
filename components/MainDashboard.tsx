@@ -102,8 +102,8 @@ const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, 
                 <div className="bg-white p-2 w-fit rounded-xl border-2 border-[#1a1a1a] mb-4 shadow-[2px_2px_0px_#1a1a1a]">
                   <Lightbulb size={24} className="text-pink-600" />
                 </div>
-                <h5 className="text-xl md:text-2xl font-black mb-1 md:mb-2 text-black">Economics Thinking</h5>
-                <p className="text-xs md:text-sm text-black font-bold leading-relaxed">경제학적 게임 이론과 행동 경제학을 인터페이스 설계에 녹여 사용자 전환율을 최적화합니다.</p>
+                <h5 className="text-xl md:text-2xl font-black mb-1 md:mb-2 text-black">Logical Thinking</h5>
+                <p className="text-xs md:text-sm text-black font-bold leading-relaxed"></p>
               </div>
               <div className="w-1/4 md:w-1/3 bg-pink-100 flex items-center justify-center border-l-2 border-[#1a1a1a] group-hover:bg-pink-200 transition-colors">
                 <span className="text-4xl md:text-6xl grayscale group-hover:grayscale-0 transition-all">📊</span>

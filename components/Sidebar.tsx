@@ -56,23 +56,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeView, setActiveView, isOpen, on
       </nav>
 
       <div className="mt-auto space-y-8">
-        <button className="flex items-center space-x-4 px-5 py-3 text-black/40 hover:text-black font-black text-sm uppercase transition-all">
-          <LogOut size={22} />
-          <span>Exit App</span>
-        </button>
 
-        <div className="p-5 bg-yellow-100 rounded-3xl border-2 border-black relative overflow-hidden shadow-[4px_4px_0px_#000]">
-          <div className="relative z-10">
-            <div className="bg-white p-2.5 w-fit rounded-xl border-2 border-black mb-3 shadow-[2px_2px_0px_#000]">
-              <Gift size={20} className="text-yellow-600" />
-            </div>
-            <p className="text-[11px] font-black text-black leading-tight mb-2">Upgrade to Pro to see all analytics.</p>
-            <button className="w-full mt-1 bg-white border-2 border-black rounded-xl py-2 text-[10px] font-black text-black hover:bg-black hover:text-white transition-all">
-              GO PREMIUM
-            </button>
-          </div>
-          <div className="absolute -right-3 -bottom-3 w-20 h-20 bg-yellow-300 rotate-12 -z-0 border-2 border-black opacity-40"></div>
-        </div>
+
       </div>
     </div>
   );
