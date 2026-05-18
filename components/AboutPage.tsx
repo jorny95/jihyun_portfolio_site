@@ -7,7 +7,7 @@ import githubIcon from '../assets/images/gihub_icon.svg';
 import { certifications, skills } from '../constants/profile';
 
 const aboutText = `경제학과를 졸업하고 금융 현장에서 커리어를 시작했지만,
-지금은 4년 차 프론트엔드 개발자 강지현입니다.
+지금은 5년 차 프론트엔드 개발자 강지현입니다.
 
 농협은행 방카슈랑스팀에서 약 1년간 근무하며,
 방카 판매인 등록·해지 및 자격 관리 업무를 담당했습니다.

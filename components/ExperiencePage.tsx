@@ -107,7 +107,7 @@ const ExperiencePage: React.FC<ExperiencePageProps> = ({ experiences, onCardClic
         {/* Total experience summary */}
         <div className="mt-10 p-5 md:p-8 bg-white border-2 border-black rounded-[24px] md:rounded-[32px] shadow-[4px_4px_0px_#000]">
           <p className="text-xs font-black uppercase tracking-widest text-black/40 mb-2">Total Experience</p>
-          <p className="text-3xl md:text-4xl font-black text-black">4+ Years</p>
+          <p className="text-3xl md:text-4xl font-black text-black">5+ Years</p>
           <p className="text-sm font-bold text-black/60 mt-1">Frontend Engineering across Fintech · Research · EdTech</p>
         </div>
       </div>
