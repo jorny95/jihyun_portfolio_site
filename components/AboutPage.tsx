@@ -104,7 +104,7 @@ const AboutPage: React.FC = () => {
                 </div>
                 <div className="flex gap-2 mt-3">
                   <span className="text-[9px] font-black bg-yellow-100 px-2 py-0.5 border border-black rounded shadow-[1px_1px_0px_#000]">ECONOMICS</span>
-                  <span className="text-[9px] font-black bg-blue-100 px-2 py-0.5 border border-black rounded shadow-[1px_1px_0px_#000]">4YRS EXP</span>
+                  <span className="text-[9px] font-black bg-blue-100 px-2 py-0.5 border border-black rounded shadow-[1px_1px_0px_#000]">5YRS EXP</span>
                 </div>
               </div>
             </div>
