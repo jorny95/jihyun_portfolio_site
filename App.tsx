@@ -67,7 +67,7 @@ const experiences: Experience[] = [
     period: '2021.11 ~ 2023.02 (1년 4개월)',
     domain: 'Fintech',
     companyLogo: '/assets/images/companies/finakle.png',
-    serviceUrl: 'http://rebitx.com/',
+    serviceUrl: 'https://rebit-x.vercel.app/',
     images: [
       '/assets/images/rebit/01.png',
       '/assets/images/rebit/02.png',
