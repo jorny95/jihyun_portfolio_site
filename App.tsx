@@ -7,6 +7,7 @@ import ExperiencePage from './components/ExperiencePage';
 import RightPanel from './components/RightPanel';
 import ExperienceModal from './components/ExperienceModal';
 import MobileNav from './components/MobileNav';
+import MouseSparkle from './components/MouseSparkle';
 import { Experience, ViewType } from './types';
 
 const experiences: Experience[] = [
@@ -104,6 +105,7 @@ const App: React.FC = () => {
 
   return (
     <div className="flex flex-col h-screen w-screen p-0 md:p-4 lg:p-6 bg-[#FEFAF2] overflow-hidden">
+      <MouseSparkle />
       {/* 
           Main Application Window 
           Container with 40px rounded corners and 2px black border 
