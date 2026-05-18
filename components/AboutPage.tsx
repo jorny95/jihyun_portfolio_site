@@ -81,7 +81,7 @@ const AboutPage: React.FC = () => {
         </div>
       )}
 
-      <div className="p-4 md:p-8 pb-32">
+      <div className="p-4 md:p-8 pb-40 md:pb-16">
         {/* Mobile title */}
         <div className="block md:hidden mb-6">
           <h2 className="text-3xl font-black text-black uppercase italic tracking-tighter">About</h2>
