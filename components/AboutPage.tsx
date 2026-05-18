@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { MapPin, ExternalLink, Award, BadgeCheck, Clock, X, Mail, Copy, Check } from 'lucide-react';
-import gachonLogo from '../assets/images/gachon_logo.jpg';
-import kyungilLogo from '../assets/images/kyungil_logo.jpeg';
-import jihyunProfile from '../assets/images/jihyun.jpg';
-import githubIcon from '../assets/images/gihub_icon.svg';
+const gachonLogo = '/assets/images/gachon_logo.jpg';
+const kyungilLogo = '/assets/images/kyungil_logo.jpeg';
+const jihyunProfile = '/assets/images/jihyun.jpg';
+const githubIcon = '/assets/images/gihub_icon.svg';
 import { certifications, skills } from '../constants/profile';
 
 const aboutText = `경제학과를 졸업하고 금융 현장에서 커리어를 시작했지만,

@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
 import { Award, MapPin, ExternalLink, X, Mail, Copy, Check, BadgeCheck, Clock } from 'lucide-react';
-import gachonLogo from '../assets/images/gachon_logo.jpg';
-import kyungilLogo from '../assets/images/kyungil_logo.jpeg';
-import jihyunProfile from '../assets/images/jihyun.jpg';
-import githubIcon from '../assets/images/gihub_icon.svg';
+const gachonLogo = '/assets/images/gachon_logo.jpg';
+const kyungilLogo = '/assets/images/kyungil_logo.jpeg';
+const jihyunProfile = '/assets/images/jihyun.jpg';
+const githubIcon = '/assets/images/gihub_icon.svg';
 import { certifications, skills } from '../constants/profile';
 
 interface RightPanelProps {
