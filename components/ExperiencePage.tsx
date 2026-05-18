@@ -44,8 +44,12 @@ const ExperiencePage: React.FC<ExperiencePageProps> = ({ experiences, onCardClic
               >
                 {/* Timeline dot */}
                 <div className="relative shrink-0 mt-4">
-                  <div className={`w-[56px] md:w-[72px] h-[56px] md:h-[72px] ${exp.color} rounded-2xl md:rounded-3xl border-2 border-black shadow-[3px_3px_0px_#000] flex items-center justify-center group-hover:shadow-[5px_5px_0px_#000] group-hover:-translate-y-0.5 transition-all`}>
-                    {domainIcon(exp.domain)}
+                  <div className={`w-[56px] md:w-[72px] h-[56px] md:h-[72px] ${exp.color} rounded-2xl md:rounded-3xl border-2 border-black shadow-[3px_3px_0px_#000] flex items-center justify-center group-hover:shadow-[5px_5px_0px_#000] group-hover:-translate-y-0.5 transition-all overflow-hidden`}>
+                    {exp.companyLogo ? (
+                      <img src={exp.companyLogo} alt={exp.company} className="w-full h-full object-cover" />
+                    ) : (
+                      domainIcon(exp.domain)
+                    )}
                   </div>
                   <div className="absolute -top-1 -right-1 w-5 h-5 bg-white border-2 border-black rounded-full flex items-center justify-center">
                     <span className="text-[9px] font-black">{index + 1}</span>

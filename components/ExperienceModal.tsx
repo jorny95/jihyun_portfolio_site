@@ -67,8 +67,15 @@ const ExperienceModal: React.FC<ExperienceModalProps> = ({ experience, onClose }
           </button>
 
           <div className="flex-1 overflow-y-auto custom-scrollbar pr-0 md:pr-4">
-            <div className={`w-fit px-4 py-1.5 rounded-full border-2 border-black font-black text-[10px] md:text-[12px] uppercase tracking-widest mb-4 md:mb-8 ${experience.color} text-black shadow-[2px_2px_0px_#000]`}>
-              {experience.domain} Specialist
+            <div className="flex items-center gap-3 mb-4 md:mb-8">
+              {experience.companyLogo && (
+                <div className={`w-10 h-10 md:w-12 md:h-12 rounded-xl border-2 border-black shadow-[2px_2px_0px_#000] overflow-hidden shrink-0`}>
+                  <img src={experience.companyLogo} alt={experience.company} className="w-full h-full object-cover" />
+                </div>
+              )}
+              <div className={`w-fit px-4 py-1.5 rounded-full border-2 border-black font-black text-[10px] md:text-[12px] uppercase tracking-widest ${experience.color} text-black shadow-[2px_2px_0px_#000]`}>
+                {experience.domain} Specialist
+              </div>
             </div>
 
             <h2 className="text-3xl md:text-5xl font-black mb-2 text-black leading-tight tracking-tighter">{experience.title}</h2>

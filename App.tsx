@@ -16,6 +16,7 @@ const experiences: Experience[] = [
     company: '이투스에듀 / 하이컨시 (Hiconsy Edu Corporation)',
     period: '2024.07 ~ 재직중',
     domain: 'EdTech',
+    companyLogo: '/assets/images/companies/hiconsy.png',
     serviceUrl: 'https://matchnow.in/',
     images: [
       '/assets/images/matchnow/01.png',
@@ -42,6 +43,7 @@ const experiences: Experience[] = [
     company: '블랙빗스튜디오 (Blackbit Studio)',
     period: '2023.03 ~ 2024.06 (1년 4개월)',
     domain: 'Research',
+    companyLogo: '/assets/images/companies/blackbit.png',
     videoUrl: '/assets/videos/newvo_intro.mp4',
     description: '설문·수요조사 기반 B2B SaaS 플랫폼 "newvo" 프론트엔드 개발. 워크스페이스 단위로 설문(Research), 수요조사(Demand), 상품(Product), 이벤트 등 다양한 폼 유형을 생성·관리하고, 응답 수집부터 AI 분석·리포트까지 제공하는 CRM 방향성의 올인원 데이터 수집 플랫폼입니다.',
     highlights: [
@@ -54,6 +56,30 @@ const experiences: Experience[] = [
     ],
     tags: ['Next.js', 'Python', 'FastAPI', 'JavaScript', 'SCSS', 'AWS S3'],
     color: 'bg-purple-100'
+  },
+  {
+    id: 'finakle',
+    title: 'Frontend Developer',
+    company: '(주)피나클 (FINAKLE)',
+    period: '2021.11 ~ 2023.02 (1년 4개월)',
+    domain: 'Fintech',
+    companyLogo: '/assets/images/companies/finakle.png',
+    serviceUrl: 'http://rebitx.com/',
+    images: [
+      '/assets/images/rebit/01.png',
+      '/assets/images/rebit/02.png',
+    ],
+    description: '핀테크 기반 상업용 부동산 조각투자 플랫폼 "Rebit" 프론트엔드 개발. 2021년 설립된 스타트업으로, 부동산 청약·거래 플랫폼의 PC 웹과 iOS·Android 앱 베타 버전을 개발하였으며, BNPL(Buy Now Pay Later) 서비스 사업도 함께 영위하였습니다.',
+    highlights: [
+      '상업용 부동산 조각투자 플랫폼 "Rebit" PC Web 프론트엔드 개발 (Next.js)',
+      '부동산 청약·거래 플로우 UI 구현 — 매물 목록, 상세, 청약 신청 화면',
+      '회원가입·로그인·마이페이지 등 인증 관련 전체 화면 개발',
+      'iOS / Android 앱 베타 버전 UI 개발 참여',
+      'Python FastAPI 백엔드 연동 및 RESTful API 통신 처리',
+      'STO(Security Token Offering) 서비스 런칭 준비',
+    ],
+    tags: ['Next.js', 'Python', 'FastAPI', 'JavaScript', 'Fintech', 'STO'],
+    color: 'bg-blue-100'
   },
 ];
 

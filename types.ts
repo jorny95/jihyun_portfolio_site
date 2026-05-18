@@ -9,6 +9,7 @@ export interface Experience {
   serviceUrl?: string;
   images?: string[];
   videoUrl?: string;
+  companyLogo?: string;
   domain: 'Fintech' | 'Research' | 'EdTech';
   tags: string[];
   color: string;
