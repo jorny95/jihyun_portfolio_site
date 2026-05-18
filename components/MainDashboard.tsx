@@ -29,7 +29,7 @@ const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, 
           <Menu size={20} className="text-black" />
         </button>
         <div className="flex items-center space-x-2 overflow-x-auto pb-2 md:pb-0 no-scrollbar ml-auto">
-          {['Next.js', 'React', 'TypeScript', 'Fintech', 'EdTech', '4년차'].map((tag) => (
+          {['Next.js', 'React', 'TypeScript', 'Fintech', 'EdTech', '5년차'].map((tag) => (
             <span key={tag} className="whitespace-nowrap px-3 py-1 bg-white border-2 border-[#1a1a1a] rounded-full text-[10px] font-black text-black shadow-[1px_1px_0px_#1a1a1a]">
               {tag}
             </span>
@@ -55,7 +55,7 @@ const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, 
             </h2>
             <p className="hidden md:block mt-4 text-sm font-bold text-black max-w-[340px] leading-relaxed">
               경제학과 졸업 후 금융 현장을 거쳐 개발자로 전향한,<br />
-              비즈니스와 사용자 경험을 함께 고민하는 4년차 프론트엔드 개발자입니다.
+              비즈니스와 사용자 경험을 함께 고민하는 5년차 프론트엔드 개발자입니다.
             </p>
           </div>
         </div>
