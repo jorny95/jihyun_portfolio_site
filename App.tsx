@@ -31,10 +31,12 @@ const experiences: Experience[] = [
       '인도 수험생 대상 JEE·NEET 1:1 과외 매칭 플랫폼 개발',
       'Plan / Class / Test 3단계 학습 플로우 UI 구현',
       'React + TypeScript 기반 모바일 반응형 웹 개발',
-      'Java Thymeleaf 서버사이드 렌더링 페이지 개발 및 유지보수',
+      'Thymeleaf 서버사이드 렌더링 템플릿 개발 및 Spring MVC Controller 레이어 직접 수정 — 백엔드 협업 없이 View~Controller 구간 독립 처리',
+      'Android/iOS 앱-웹뷰(WebView) 브릿지 연동 — JavaScript Interface를 통한 앱↔웹 양방향 통신 구현 및 웹뷰 전용 UI 개발',
+      'RESTful API 연동 (Axios) — 튜터 매칭, 수업 예약, 사용자 인증 등 전 도메인 API 통신 구현',
       '이투스에듀 재직 중 해당 서비스 부서가 하이컨시로 분사·인수',
     ],
-    tags: ['React', 'TypeScript', 'JavaScript', 'Java', 'Thymeleaf', 'HTML/CSS'],
+    tags: ['React', 'TypeScript', 'Java', 'Thymeleaf', 'WebView Bridge', 'REST API'],
     color: 'bg-yellow-100'
   },
   {
@@ -53,6 +55,7 @@ const experiences: Experience[] = [
       '카카오톡 마케팅 발송 연동 UI 개발',
       'PC·모바일 반응형 전체 화면 개발 (Next.js App Router)',
       '구독·크레딧·상품 결제 플로우 및 마이페이지 구현',
+      'RESTful API 연동 (Axios) — 폼 생성·응답 수집·분석 결과 조회 등 전 도메인 API 통신 구현',
     ],
     tags: ['Next.js', 'Python', 'FastAPI', 'JavaScript', 'SCSS', 'AWS S3'],
     color: 'bg-purple-100'
@@ -85,9 +88,9 @@ const experiences: Experience[] = [
       'P2P 금융 플랫폼 "FUNCHY" — Figma 디자인 시안 제작 및 Next.js 퍼블리싱 (기여도 40%)',
       'FUNCHY 사용자 페이지: 그라디언트·글라스모피즘 컨셉 UI, 투자 예상 수익률 계산기, 카카오맵 API 연동',
       'FUNCHY 어드민 페이지: 투자 상품 관리, 회원 관리, 운영 현황 대시보드 화면 개발',
-      'Python FastAPI 백엔드 연동 및 RESTful API 통신 처리',
+      'RESTful API 연동 (Axios) — 부동산 매물·청약·거래, 투자 상품·수익률 등 전 도메인 API 통신 구현',
     ],
-    tags: ['Next.js', 'Python', 'FastAPI', 'JavaScript', 'SCSS', 'Figma', 'Fintech'],
+    tags: ['Next.js', 'Python', 'FastAPI', 'JavaScript', 'SCSS', 'Figma', 'REST API'],
     color: 'bg-blue-100'
   },
 ];
