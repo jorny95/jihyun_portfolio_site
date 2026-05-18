@@ -78,14 +78,14 @@ const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, 
               onClick={() => onCardClick(exp)}
               className={`retro-card p-5 md:p-6 ${exp.color} rounded-[24px] md:rounded-[32px] cursor-pointer flex flex-col h-[190px] md:h-[220px] hover:shadow-[6px_6px_0px_#1a1a1a] active:translate-y-1 active:shadow-[2px_2px_0px_#1a1a1a] border-2 border-[#1a1a1a] shadow-[4px_4px_0px_#1a1a1a]`}
             >
-              <div className="flex items-center justify-between mb-4">
-                <div className="bg-white p-1.5 rounded-xl border-2 border-[#1a1a1a] shadow-[2px_2px_0px_#1a1a1a] w-9 h-9 overflow-hidden flex items-center justify-center">
+              <div className="flex items-center justify-between mb-3">
+                <div className="bg-white p-1.5 rounded-xl border-2 border-[#1a1a1a] shadow-[2px_2px_0px_#1a1a1a] w-9 h-9 overflow-hidden flex items-center justify-center shrink-0">
                   {exp.companyLogo
                     ? <img src={exp.companyLogo} alt={exp.company} className="w-full h-full object-cover" />
                     : domainIcon(exp.domain)
                   }
                 </div>
-                <span className="text-[10px] font-black uppercase tracking-widest text-black/70">{exp.period}</span>
+                <span className={`text-[9px] font-black text-black/60 text-right leading-tight ml-2 ${exp.period.length > 15 ? 'max-w-[140px]' : ''}`}>{exp.period}</span>
               </div>
               <h4 className="font-black text-lg md:text-xl leading-tight mb-1 text-black">{exp.title}</h4>
               <p className="text-xs font-bold text-black/70 mb-auto">{exp.company}</p>
