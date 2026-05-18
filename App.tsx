@@ -101,7 +101,7 @@ const experiences: Experience[] = [
     title: 'Bancassurance',
     company: '농협은행주식회사 (NH농협은행)',
     period: '2019.04 ~ 2020.04 (1년)',
-    companyLogo: '/assets/images/companies/nonghyup.png',
+    companyLogo: '/assets/images/companies/nonghyub.png',
     domain: 'Finance',
     description: '농협은행 방카슈랑스팀에서 보험 판매 계수 관리 및 방카판매인·보험대리점 자격 관리 업무를 수행. 금융 감독 기준과 내부 규정을 준수하며 데이터 산출·보고 및 자격 관리 행정 업무를 담당했습니다.',
     highlights: [
