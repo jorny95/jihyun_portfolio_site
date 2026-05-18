@@ -1,10 +1,11 @@
 
 import React, { useState } from 'react';
-import { Award, GraduationCap, MapPin, ExternalLink, X, Mail, Copy, Check } from 'lucide-react';
+import { Award, MapPin, ExternalLink, X, Mail, Copy, Check, BadgeCheck, Clock } from 'lucide-react';
 import gachonLogo from '../assets/images/gachon_logo.jpg';
 import kyungilLogo from '../assets/images/kyungil_logo.jpeg';
 import jihyunProfile from '../assets/images/jihyun.jpg';
 import githubIcon from '../assets/images/gihub_icon.svg';
+import { certifications, skills } from '../constants/profile';
 
 interface RightPanelProps {
   isMobileTop?: boolean;
@@ -19,12 +20,6 @@ const RightPanel: React.FC<RightPanelProps> = ({ isMobileTop }) => {
   const email = "kjwise1128@gmail.com";
   const phone = "01086433076";
 
-  const skills = [
-    { name: 'HTML,CSS,Javacript', progress: 90, color: 'bg-red-500' },
-    { name: 'React / Next.js', progress: 95, color: 'bg-blue-500', desc: 'Core UI Architecture' },
-    { name: 'State Management (Context/Zustand)', progress: 90, color: 'bg-yellow-500', desc: 'Complex Data Flow' },
-    { name: 'Fullstack Bridge (Spring/Thymeleaf)', progress: 85, color: 'bg-green-500', desc: 'Backend Integration' },
-  ];
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -260,7 +255,7 @@ const RightPanel: React.FC<RightPanelProps> = ({ isMobileTop }) => {
       </div>
 
       {/* Academy Card */}
-      <div className="retro-card bg-indigo-50 p-5 rounded-[32px] mb-10 border-2 border-black shadow-[4px_4px_0px_#000]">
+      <div className="retro-card bg-indigo-50 p-5 rounded-[32px] mb-6 border-2 border-black shadow-[4px_4px_0px_#000]">
         <div className="flex items-start gap-4">
           <div className="w-14 h-14 bg-white rounded-2xl border-2 border-black shadow-[2px_2px_0px_#1a1a1a] p-2 flex items-center justify-center shrink-0">
             <img
@@ -277,6 +272,34 @@ const RightPanel: React.FC<RightPanelProps> = ({ isMobileTop }) => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Certifications */}
+      <h5 className="font-black text-lg text-black mb-4 flex items-center gap-2">
+        <BadgeCheck size={20} />
+        Certifications
+      </h5>
+      <div className="space-y-2 mb-6">
+        {certifications.map((cert) => (
+          <div key={cert.name} className="flex items-center justify-between bg-white border-2 border-black rounded-2xl px-4 py-3 shadow-[2px_2px_0px_#000]">
+            <div className="flex items-center gap-2 min-w-0">
+              {cert.status === 'pending'
+                ? <Clock size={14} className="text-yellow-500 shrink-0" />
+                : <BadgeCheck size={14} className="text-green-500 shrink-0" />
+              }
+              <div className="min-w-0">
+                <p className="text-xs font-black text-black truncate">{cert.name}</p>
+                <p className="text-[9px] font-bold text-black/50">{cert.issuer}</p>
+              </div>
+            </div>
+            <div className="text-right shrink-0 ml-2">
+              <span className={`text-[9px] font-black px-2 py-0.5 rounded border ${cert.status === 'pending' ? 'bg-yellow-50 border-yellow-400 text-yellow-700' : 'bg-green-50 border-green-400 text-green-700'}`}>
+                {cert.status === 'pending' ? '취득예정' : '취득'}
+              </span>
+              <p className="text-[9px] font-bold text-black/40 mt-0.5">{cert.date}</p>
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* Skills / Stats */}

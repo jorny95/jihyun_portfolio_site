@@ -118,10 +118,12 @@ const App: React.FC = () => {
         {/* Main Content Area */}
         <div className="flex-1 overflow-y-auto custom-scrollbar">
 
-          {/* 1. 모바일 프로필 영역: 이제 헤더보다 위에 위치하며 스크롤 시 올라갑니다 */}
-          <div className="block md:hidden border-b-2 border-black bg-white shrink-0">
-            <RightPanel isMobileTop />
-          </div>
+          {/* 1. 모바일 프로필 영역: About 탭에서는 숨김 */}
+          {activeView !== 'About' && (
+            <div className="block md:hidden border-b-2 border-black bg-white shrink-0">
+              <RightPanel isMobileTop />
+            </div>
+          )}
 
           {/* activeView에 따른 조건부 렌더링 */}
           {activeView === 'Overview' ? (
@@ -147,10 +149,12 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Panel - Visible on MD+, hidden on SM (content moved to top) */}
-        <div className="hidden md:block w-[360px] lg:w-[360px] shrink-0">
-          <RightPanel />
-        </div>
+        {/* Right Panel - About 탭에서는 숨김 */}
+        {activeView !== 'About' && (
+          <div className="hidden md:block w-[360px] lg:w-[360px] shrink-0">
+            <RightPanel />
+          </div>
+        )}
       </div>
 
       {/* 3D Experience Modal */}
