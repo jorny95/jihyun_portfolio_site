@@ -96,6 +96,21 @@ const experiences: Experience[] = [
     tags: ['Next.js', 'JavaScript', 'SCSS', 'Figma', 'REST API', 'Fintech'],
     color: 'bg-blue-100'
   },
+  {
+    id: 'nonghyup',
+    title: 'Bancassurance',
+    company: '농협은행주식회사 (NH농협은행)',
+    period: '2019.04 ~ 2020.04 (1년)',
+    domain: 'Finance',
+    description: '농협은행 방카슈랑스팀에서 보험 판매 계수 관리 및 방카판매인·보험대리점 자격 관리 업무를 수행. 금융 감독 기준과 내부 규정을 준수하며 데이터 산출·보고 및 자격 관리 행정 업무를 담당했습니다.',
+    highlights: [
+      '방카 계수자료 작성 및 관리 — 보험 상품별 판매 실적·수수료·정산 구조 이해를 바탕으로 정확한 데이터 산출 및 정기 보고 업무 수행',
+      '방카판매인 및 보험대리점 자격 관리 — 자격 유지 요건 점검, 등록·갱신 프로세스 관리 등 금융감독 기준 준수 행정 업무 담당',
+      '금융 현장 경험을 바탕으로 핀테크·보험·투자 도메인에 대한 깊은 이해를 갖춤 — 이후 개발자 전향 후 금융 서비스(Rebit, FUNCHY) 개발에 직접 활용',
+    ],
+    tags: ['방카슈랑스', '금융', '데이터 관리', '자격관리'],
+    color: 'bg-green-50'
+  },
 ];
 
 const App: React.FC = () => {

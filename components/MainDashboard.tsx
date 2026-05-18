@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { TrendingUp, Monitor, Users, Menu, Zap, UserCheck, GraduationCap } from 'lucide-react';
+import { TrendingUp, Monitor, Users, Menu, Zap, UserCheck, GraduationCap, Landmark } from 'lucide-react';
 import { Experience, ViewType } from '../types';
 
 interface MainDashboardProps {
@@ -14,6 +14,7 @@ interface MainDashboardProps {
 const domainIcon = (domain: Experience['domain']) => {
   if (domain === 'Fintech') return <TrendingUp size={20} className="text-black" />;
   if (domain === 'Research') return <Monitor size={20} className="text-black" />;
+  if (domain === 'Finance') return <Landmark size={20} className="text-black" />;
   return <Users size={20} className="text-black" />;
 };
 
