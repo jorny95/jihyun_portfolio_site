@@ -57,7 +57,7 @@ const experiences: Experience[] = [
       '구독·크레딧·상품 결제 플로우 및 마이페이지 구현',
       'RESTful API 연동 (Axios) — 폼 생성·응답 수집·분석 결과 조회 등 전 도메인 API 통신 구현',
     ],
-    tags: ['Next.js', 'Python', 'FastAPI', 'JavaScript', 'SCSS', 'AWS S3'],
+    tags: ['Next.js', 'JavaScript', 'SCSS', 'AWS S3', 'REST API'],
     color: 'bg-purple-100'
   },
   {
@@ -79,18 +79,17 @@ const experiences: Experience[] = [
       '/assets/images/funchy/04.png',
       '/assets/images/funchy/05.png',
     ],
-    description: '핀테크 기반 상업용 부동산 조각투자 플랫폼 "Rebit" 및 P2P 금융 플랫폼 "FUNCHY" 프론트엔드 개발. 2021년 설립된 스타트업으로, 부동산 청약·거래 플랫폼의 PC 웹과 iOS·Android 앱 베타 버전을 개발하였으며, BNPL 서비스 사업도 함께 영위하였습니다.',
+    description: '핀테크 기반 상업용 부동산 조각투자 플랫폼 "Rebit" 및 P2P 금융 플랫폼 "FUNCHY" 프론트엔드 개발. 2021년 설립된 스타트업으로 PC 웹 서비스를 담당했으며, BNPL 서비스 사업도 함께 영위하였습니다.',
     highlights: [
       '상업용 부동산 조각투자 플랫폼 "Rebit" PC Web 사용자·관리자 프론트엔드 개발 (Next.js)',
       'Rebit 사용자 페이지: 부동산 청약·거래 플로우, 매물 목록·상세, 청약 신청, 회원가입·마이페이지',
       'Rebit 어드민 페이지: 매물 등록·관리, 회원 관리, 공지사항·이벤트 게시판 관리 화면 개발',
-      'iOS / Android 앱 베타 버전 UI 개발 참여',
       'P2P 금융 플랫폼 "FUNCHY" — Figma 디자인 시안 제작 및 Next.js 퍼블리싱 (기여도 40%)',
       'FUNCHY 사용자 페이지: 그라디언트·글라스모피즘 컨셉 UI, 투자 예상 수익률 계산기, 카카오맵 API 연동',
       'FUNCHY 어드민 페이지: 투자 상품 관리, 회원 관리, 운영 현황 대시보드 화면 개발',
       'RESTful API 연동 (Axios) — 부동산 매물·청약·거래, 투자 상품·수익률 등 전 도메인 API 통신 구현',
     ],
-    tags: ['Next.js', 'Python', 'FastAPI', 'JavaScript', 'SCSS', 'Figma', 'REST API'],
+    tags: ['Next.js', 'JavaScript', 'SCSS', 'Figma', 'REST API', 'Fintech'],
     color: 'bg-blue-100'
   },
 ];
