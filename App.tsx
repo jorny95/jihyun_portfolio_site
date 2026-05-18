@@ -128,6 +128,7 @@ const App: React.FC = () => {
               experiences={experiences}
               onCardClick={(exp) => setSelectedExp(exp)}
               onMenuToggle={() => setIsSidebarOpen(true)}
+              onViewChange={setActiveView}
             />
           ) : activeView === 'Experience' ? (
             <ExperiencePage
