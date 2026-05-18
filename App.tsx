@@ -17,6 +17,13 @@ const experiences: Experience[] = [
     period: '2024.07 ~ 재직중',
     domain: 'EdTech',
     serviceUrl: 'https://matchnow.in/',
+    images: [
+      '/assets/images/matchnow/01.png',
+      '/assets/images/matchnow/02.png',
+      '/assets/images/matchnow/03.png',
+      '/assets/images/matchnow/04.png',
+      '/assets/images/matchnow/05.png',
+    ],
     description: '인도 JEE·NEET 수험생을 대상으로 한 1:1 온라인 과외 매칭 플랫폼 "MatchNow" 프론트엔드 개발. 상위 1% 튜터와 학생을 연결하는 매칭 서비스로, Plan·Class·Test 3단계 학습 플로우를 구현하였으며 Android/iOS 앱과 웹 서비스를 함께 제공합니다.',
     highlights: [
       '인도 수험생 대상 JEE·NEET 1:1 과외 매칭 플랫폼 개발',

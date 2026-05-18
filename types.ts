@@ -7,6 +7,7 @@ export interface Experience {
   description: string;
   highlights?: string[];
   serviceUrl?: string;
+  images?: string[];
   domain: 'Fintech' | 'Research' | 'EdTech';
   tags: string[];
   color: string;

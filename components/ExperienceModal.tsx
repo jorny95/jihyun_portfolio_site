@@ -2,6 +2,7 @@
 import React from 'react';
 import { X, ExternalLink, Calendar, MapPin, CheckCircle2 } from 'lucide-react';
 import { Experience } from '../types';
+import ServiceImageCarousel from './ServiceImageCarousel';
 
 interface ExperienceModalProps {
   experience: Experience;
@@ -21,19 +22,25 @@ const ExperienceModal: React.FC<ExperienceModalProps> = ({ experience, onClose }
           <X size={24} className="text-black" />
         </button>
 
-        {/* Left/Top: 3D Visualization */}
+        {/* Left/Top: Service Screenshots or 3D Visualization */}
         <div className="w-full md:w-1/2 h-[260px] md:h-full bg-[#E5E7EB] border-b-4 md:border-b-0 md:border-r-4 border-black relative overflow-hidden shrink-0">
-          <iframe
-            src='https://my.spline.design/3dcardz3ro-626Ak3nd2xVIbW9dFIpMvm7z/'
-            frameBorder='0'
-            width='100%'
-            height='100%'
-            title="3D Card Interaction"
-            className="w-full h-full scale-125 md:scale-110 pointer-events-auto"
-          />
-          <div className="absolute top-4 left-4 md:top-8 md:left-8 bg-white px-3 py-1.5 md:px-5 md:py-2.5 border-2 border-black rounded-full font-black text-[10px] md:text-sm shadow-[3px_3px_0px_#000]">
-            3D CARD VIEW
-          </div>
+          {experience.images && experience.images.length > 0 ? (
+            <ServiceImageCarousel images={experience.images} title={experience.company} />
+          ) : (
+            <>
+              <iframe
+                src='https://my.spline.design/3dcardz3ro-626Ak3nd2xVIbW9dFIpMvm7z/'
+                frameBorder='0'
+                width='100%'
+                height='100%'
+                title="3D Card Interaction"
+                className="w-full h-full scale-125 md:scale-110 pointer-events-auto"
+              />
+              <div className="absolute top-4 left-4 md:top-8 md:left-8 bg-white px-3 py-1.5 md:px-5 md:py-2.5 border-2 border-black rounded-full font-black text-[10px] md:text-sm shadow-[3px_3px_0px_#000]">
+                3D CARD VIEW
+              </div>
+            </>
+          )}
         </div>
 
         {/* Right/Bottom: Content Details */}
