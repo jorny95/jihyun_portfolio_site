@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Home, Briefcase, Code, User } from 'lucide-react';
+import { Home, Briefcase, User } from 'lucide-react';
 import { ViewType } from '../types';
 
 interface MobileNavProps {
@@ -12,7 +12,6 @@ const MobileNav: React.FC<MobileNavProps> = ({ activeView, setActiveView }) => {
   const navItems: { label: ViewType; icon: any }[] = [
     { label: 'Overview', icon: <Home size={20} /> },
     { label: 'Experience', icon: <Briefcase size={20} /> },
-    { label: 'Projects', icon: <Code size={20} /> },
     { label: 'About', icon: <User size={20} /> },
   ];
 

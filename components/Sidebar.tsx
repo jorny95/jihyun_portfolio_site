@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Home, Briefcase, Code, User, LogOut, Gift, X } from 'lucide-react';
+import { Home, Briefcase, User, X } from 'lucide-react';
 import { ViewType } from '../types';
 
 interface SidebarProps {
@@ -14,7 +14,6 @@ const Sidebar: React.FC<SidebarProps> = ({ activeView, setActiveView, isOpen, on
   const navItems: { label: ViewType; icon: any }[] = [
     { label: 'Overview', icon: <Home size={22} /> },
     { label: 'Experience', icon: <Briefcase size={22} /> },
-    { label: 'Projects', icon: <Code size={22} /> },
     { label: 'About', icon: <User size={22} /> },
   ];
 

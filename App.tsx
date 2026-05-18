@@ -70,17 +70,23 @@ const experiences: Experience[] = [
       '/assets/images/rebit/02.png',
       '/assets/images/rebit/03.png',
       '/assets/images/rebit/04.png',
+      '/assets/images/funchy/01.png',
+      '/assets/images/funchy/02.png',
+      '/assets/images/funchy/03.png',
+      '/assets/images/funchy/04.png',
+      '/assets/images/funchy/05.png',
     ],
-    description: '핀테크 기반 상업용 부동산 조각투자 플랫폼 "Rebit" 프론트엔드 개발. 2021년 설립된 스타트업으로, 부동산 청약·거래 플랫폼의 PC 웹과 iOS·Android 앱 베타 버전을 개발하였으며, BNPL(Buy Now Pay Later) 서비스 사업도 함께 영위하였습니다.',
+    description: '핀테크 기반 상업용 부동산 조각투자 플랫폼 "Rebit" 및 P2P 금융 플랫폼 "FUNCHY" 프론트엔드 개발. 2021년 설립된 스타트업으로, 부동산 청약·거래 플랫폼의 PC 웹과 iOS·Android 앱 베타 버전을 개발하였으며, BNPL 서비스 사업도 함께 영위하였습니다.',
     highlights: [
       '상업용 부동산 조각투자 플랫폼 "Rebit" PC Web 프론트엔드 개발 (Next.js)',
       '부동산 청약·거래 플로우 UI 구현 — 매물 목록, 상세, 청약 신청 화면',
       '회원가입·로그인·마이페이지 등 인증 관련 전체 화면 개발',
       'iOS / Android 앱 베타 버전 UI 개발 참여',
+      'P2P 금융 플랫폼 "FUNCHY" — Figma 디자인 시안 제작 및 Next.js 퍼블리싱 (기여도 40%)',
+      'FUNCHY: 그라디언트·글라스모피즘 컨셉 UI, 투자 예상 수익률 계산기, 카카오맵 API 연동',
       'Python FastAPI 백엔드 연동 및 RESTful API 통신 처리',
-      'STO(Security Token Offering) 서비스 런칭 준비',
     ],
-    tags: ['Next.js', 'Python', 'FastAPI', 'JavaScript', 'Fintech', 'STO'],
+    tags: ['Next.js', 'Python', 'FastAPI', 'JavaScript', 'SCSS', 'Figma', 'Fintech'],
     color: 'bg-blue-100'
   },
 ];
@@ -129,16 +135,7 @@ const App: React.FC = () => {
             />
           ) : activeView === 'About' ? (
             <AboutPage />
-          ) : (
-            <div className="p-8 md:p-12 min-h-full bg-[#F9F7F2]">
-              <h2 className="text-4xl font-black text-black uppercase italic mb-4">{activeView}</h2>
-              <div className="w-full h-[60vh] border-4 border-dashed border-black/10 rounded-[40px] flex items-center justify-center">
-                <p className="font-bold text-black/20 text-xl uppercase tracking-widest">
-                  {activeView} content goes here...
-                </p>
-              </div>
-            </div>
-          )}
+          ) : null}
 
           {/* Mobile Footer Nav */}
           <div className="block md:hidden">

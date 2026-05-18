@@ -15,4 +15,4 @@ export interface Experience {
   color: string;
 }
 
-export type ViewType = 'Overview' | 'Experience' | 'Projects' | 'About';
+export type ViewType = 'Overview' | 'Experience' | 'About';
