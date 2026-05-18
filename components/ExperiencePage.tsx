@@ -23,7 +23,7 @@ const ExperiencePage: React.FC<ExperiencePageProps> = ({ experiences, onCardClic
         <span className="text-sm font-black text-black/40 uppercase tracking-widest">{experiences.length} Companies</span>
       </div>
 
-      <div className="px-4 md:px-8 pb-32 pt-4">
+      <div className="px-4 md:px-8 pb-48 md:pb-32 pt-4">
         {/* Mobile title */}
         <div className="block md:hidden mb-6">
           <h2 className="text-3xl font-black text-black uppercase italic tracking-tighter">Experience</h2>

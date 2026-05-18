@@ -16,7 +16,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ activeView, setActiveView }) => {
   ];
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t-4 border-black px-6 py-4 flex items-center justify-between z-40">
+    <div className="fixed bottom-0 left-0 right-0 bg-white border-t-4 border-black px-6 pt-4 flex items-center justify-between z-40" style={{ paddingBottom: 'calc(1rem + env(safe-area-inset-bottom))' }}>
       {navItems.map((item) => (
         <button
           key={item.label}

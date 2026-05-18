@@ -38,7 +38,7 @@ const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, 
         </div>
       </div>
 
-      <div className="px-4 md:px-8 pb-32">
+      <div className="px-4 md:px-8 pb-48 md:pb-32">
         {/* Hero */}
         <div className="w-full h-[240px] md:h-[320px] bg-white border-2 border-[#1a1a1a] rounded-[24px] md:rounded-[40px] mt-4 md:mt-0 mb-8 overflow-hidden relative shadow-[6px_6px_0px_#1a1a1a]">
           <iframe
