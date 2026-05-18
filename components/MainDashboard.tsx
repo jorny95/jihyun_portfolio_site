@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { TrendingUp, Monitor, Users, Menu, Zap, UserCheck, GraduationCap, Landmark } from 'lucide-react';
+import { TrendingUp, Monitor, Users, Menu, Zap, UserCheck, GraduationCap, Landmark, BotMessageSquare } from 'lucide-react';
 import { Experience, ViewType } from '../types';
 
 interface MainDashboardProps {
@@ -30,7 +30,7 @@ const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, 
           <Menu size={20} className="text-black" />
         </button>
         <div className="flex items-center flex-wrap gap-2 justify-end ml-auto">
-          {['Next.js', 'React', 'TypeScript', 'Fintech', 'EdTech', '5년차'].map((tag) => (
+          {['Next.js', 'React', 'TypeScript', 'Fintech', 'EdTech', '5년차', 'AI 활용'].map((tag) => (
             <span key={tag} className="whitespace-nowrap px-3 py-1 bg-white border-2 border-[#1a1a1a] rounded-full text-[10px] font-black text-black shadow-[1px_1px_0px_#1a1a1a]">
               {tag}
             </span>
@@ -105,7 +105,7 @@ const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, 
         {/* Who I Am */}
         <div className="mt-12">
           <h3 className="text-xl md:text-2xl font-black text-black mb-6">Who I Am</h3>
-          <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             <div className="retro-card bg-yellow-50 rounded-[24px] md:rounded-[32px] overflow-hidden flex group border-2 border-[#1a1a1a] shadow-[4px_4px_0px_#1a1a1a]">
               <div className="p-6 md:p-8 flex-1">
                 <div className="bg-white p-2 w-fit rounded-xl border-2 border-[#1a1a1a] mb-4 shadow-[2px_2px_0px_#1a1a1a]">
@@ -133,6 +133,16 @@ const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, 
                 </div>
                 <h5 className="text-lg md:text-xl font-black mb-2 text-black">빠른 실행력</h5>
                 <p className="text-xs md:text-sm text-black/70 font-bold leading-relaxed">초기 단계 스타트업에서의 서비스 구축 경험이 많습니다. 새로운 환경에 빠르게 적응하며 실행력 있게 제품을 만들어갑니다.</p>
+              </div>
+            </div>
+
+            <div className="retro-card bg-purple-50 rounded-[24px] md:rounded-[32px] overflow-hidden flex group border-2 border-[#1a1a1a] shadow-[4px_4px_0px_#1a1a1a]">
+              <div className="p-6 md:p-8 flex-1">
+                <div className="bg-white p-2 w-fit rounded-xl border-2 border-[#1a1a1a] mb-4 shadow-[2px_2px_0px_#1a1a1a]">
+                  <BotMessageSquare size={24} className="text-purple-600" />
+                </div>
+                <h5 className="text-lg md:text-xl font-black mb-2 text-black">AI 활용 개발</h5>
+                <p className="text-xs md:text-sm text-black/70 font-bold leading-relaxed">AI 도구를 개발 워크플로우에 자연스럽게 녹여 생산성을 높입니다. 코드 작성부터 문제 해결까지 AI를 효율적으로 활용해 더 빠르고 정확하게 결과물을 만들어냅니다.</p>
               </div>
             </div>
           </div>
