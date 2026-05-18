@@ -22,9 +22,23 @@ const ExperienceModal: React.FC<ExperienceModalProps> = ({ experience, onClose }
           <X size={24} className="text-black" />
         </button>
 
-        {/* Left/Top: Service Screenshots or 3D Visualization */}
+        {/* Left/Top: Video / Screenshots / 3D Visualization */}
         <div className="w-full md:w-1/2 h-[260px] md:h-full bg-[#E5E7EB] border-b-4 md:border-b-0 md:border-r-4 border-black relative overflow-hidden shrink-0">
-          {experience.images && experience.images.length > 0 ? (
+          {experience.videoUrl ? (
+            <>
+              <video
+                src={experience.videoUrl}
+                className="w-full h-full object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+              <div className="absolute top-4 left-4 bg-white px-3 py-1.5 border-2 border-black rounded-full font-black text-[10px] shadow-[2px_2px_0px_#000] uppercase tracking-widest">
+                Service Preview
+              </div>
+            </>
+          ) : experience.images && experience.images.length > 0 ? (
             <ServiceImageCarousel images={experience.images} title={experience.company} />
           ) : (
             <>

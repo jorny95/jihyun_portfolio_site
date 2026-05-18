@@ -36,6 +36,25 @@ const experiences: Experience[] = [
     tags: ['React', 'TypeScript', 'JavaScript', 'Java', 'Thymeleaf', 'HTML/CSS'],
     color: 'bg-yellow-100'
   },
+  {
+    id: 'blackbit',
+    title: 'Frontend Developer',
+    company: '블랙빗스튜디오 (Blackbit Studio)',
+    period: '2023.03 ~ 2024.06 (1년 4개월)',
+    domain: 'Research',
+    videoUrl: '/assets/videos/newvo_intro.mp4',
+    description: '설문·수요조사 기반 B2B SaaS 플랫폼 "newvo" 프론트엔드 개발. 워크스페이스 단위로 설문(Research), 수요조사(Demand), 상품(Product), 이벤트 등 다양한 폼 유형을 생성·관리하고, 응답 수집부터 AI 분석·리포트까지 제공하는 CRM 방향성의 올인원 데이터 수집 플랫폼입니다.',
+    highlights: [
+      '워크스페이스 기반 폼 빌더 UI 개발 — Research / Demand / Product / Ticket / Event 등 다양한 폼 유형 지원',
+      '응답 대시보드, 교차 분석(Cross-Analysis), AI 기반 데이터 분석 리포트 페이지 구현',
+      '팀 워크스페이스 기능 — 멤버 초대, 권한 관리, 활동 로그 화면 개발',
+      '카카오톡 마케팅 발송 연동 UI 개발',
+      'PC·모바일 반응형 전체 화면 개발 (Next.js App Router)',
+      '구독·크레딧·상품 결제 플로우 및 마이페이지 구현',
+    ],
+    tags: ['Next.js', 'Python', 'FastAPI', 'JavaScript', 'SCSS', 'AWS S3'],
+    color: 'bg-purple-100'
+  },
 ];
 
 const App: React.FC = () => {

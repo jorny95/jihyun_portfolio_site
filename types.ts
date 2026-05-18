@@ -8,6 +8,7 @@ export interface Experience {
   highlights?: string[];
   serviceUrl?: string;
   images?: string[];
+  videoUrl?: string;
   domain: 'Fintech' | 'Research' | 'EdTech';
   tags: string[];
   color: string;
