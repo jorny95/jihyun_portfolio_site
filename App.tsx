@@ -31,12 +31,15 @@ const experiences: Experience[] = [
       '인도 수험생 대상 JEE·NEET 1:1 과외 매칭 플랫폼 개발',
       'Plan / Class / Test 3단계 학습 플로우 UI 구현',
       'React + TypeScript 기반 모바일 반응형 웹 개발',
+      '글로벌 서비스 전체 UI 영문화 — 영어 기반 레이아웃 설계 및 가변 길이 텍스트·줄바꿈·폰트 처리로 다양한 해상도 대응',
+      '다국어(i18n/l10n) 지원 구현 — 영어·힌디어 언어 전환 기능 개발 및 RTL/LTR 혼용 환경 대응',
+      '글로벌 로케일 처리 — 인도 시간대(IST) 기준 날짜·시간 포맷 및 해외 결제 플로우 UI 구현',
       'Thymeleaf 서버사이드 렌더링 템플릿 개발 및 Spring MVC Controller 레이어 직접 수정 — 백엔드 협업 없이 View~Controller 구간 독립 처리',
       'Android/iOS 앱-웹뷰(WebView) 브릿지 연동 — JavaScript Interface를 통한 앱↔웹 양방향 통신 구현 및 웹뷰 전용 UI 개발',
       'RESTful API 연동 (Axios) — 튜터 매칭, 수업 예약, 사용자 인증 등 전 도메인 API 통신 구현',
       '이투스에듀 재직 중 해당 서비스 부서가 하이컨시로 분사·인수',
     ],
-    tags: ['React', 'TypeScript', 'Java', 'Thymeleaf', 'WebView Bridge', 'REST API'],
+    tags: ['React', 'TypeScript', 'Java', 'Thymeleaf', 'WebView Bridge', 'REST API', 'i18n'],
     color: 'bg-yellow-100'
   },
   {
