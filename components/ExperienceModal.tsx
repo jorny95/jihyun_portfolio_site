@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { X, ExternalLink, Calendar, MapPin } from 'lucide-react';
+import { X, ExternalLink, Calendar, MapPin, CheckCircle2 } from 'lucide-react';
 import { Experience } from '../types';
 
 interface ExperienceModalProps {
@@ -72,6 +72,20 @@ const ExperienceModal: React.FC<ExperienceModalProps> = ({ experience, onClose }
                 </p>
               </div>
 
+              {experience.highlights && experience.highlights.length > 0 && (
+                <div className="space-y-3 md:space-y-4">
+                  <h3 className="text-lg md:text-2xl font-black pt-6 border-t-2 border-black/10 text-black">Key Contributions</h3>
+                  <ul className="space-y-2 md:space-y-3">
+                    {experience.highlights.map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 md:gap-3">
+                        <CheckCircle2 size={16} className="text-black/40 shrink-0 mt-0.5" />
+                        <span className="text-xs md:text-sm font-bold text-black leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               <div className="space-y-3 md:space-y-6">
                 <h3 className="text-lg md:text-2xl font-black pt-6 border-t-2 border-black/10 text-black">Tech Stack</h3>
                 <div className="flex flex-wrap gap-2 md:gap-3">
@@ -86,9 +100,18 @@ const ExperienceModal: React.FC<ExperienceModalProps> = ({ experience, onClose }
           </div>
 
           <div className="mt-6 md:mt-10 pt-6 md:pt-8 border-t-2 border-black/10 flex items-center justify-between pb-4 md:pb-0">
-            <button className="flex items-center gap-2 text-sm md:text-base font-black text-black/50 hover:text-black transition-colors">
-              Case Study <ExternalLink size={18} />
-            </button>
+            {experience.serviceUrl ? (
+              <a
+                href={experience.serviceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm md:text-base font-black text-black/50 hover:text-black transition-colors"
+              >
+                Visit Service <ExternalLink size={18} />
+              </a>
+            ) : (
+              <span />
+            )}
             <button
               onClick={onClose}
               className="bg-black text-white px-8 py-3 md:px-10 md:py-4 rounded-xl md:rounded-2xl font-black text-sm md:text-lg hover:translate-x-1 active:translate-y-1 transition-all shadow-[4px_4px_0px_#1a1a1a] md:shadow-[6px_6px_0px_#1a1a1a] active:shadow-none"

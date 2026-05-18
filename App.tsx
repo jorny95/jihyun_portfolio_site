@@ -11,35 +11,23 @@ import { Experience, ViewType } from './types';
 
 const experiences: Experience[] = [
   {
-    id: 'edtech',
+    id: 'hiconsy',
     title: 'Frontend Engineer',
-    company: 'EdTech Startup (India)',
-    period: '2022 - Present (2 Years)',
+    company: '이투스에듀 / 하이컨시 (Hiconsy Edu Corporation)',
+    period: '2024.07 ~ 재직중',
     domain: 'EdTech',
-    description: 'Mentor-Mentee matching platform connecting Indian students with global experts. Focused on high-concurrency matching algorithms and localized mobile-web UI.',
-    tags: ['React', 'TypeScript', 'Tailwind', 'Matching Algorithm'],
+    serviceUrl: 'https://matchnow.in/',
+    description: '인도 JEE·NEET 수험생을 대상으로 한 1:1 온라인 과외 매칭 플랫폼 "MatchNow" 프론트엔드 개발. 상위 1% 튜터와 학생을 연결하는 매칭 서비스로, Plan·Class·Test 3단계 학습 플로우를 구현하였으며 Android/iOS 앱과 웹 서비스를 함께 제공합니다.',
+    highlights: [
+      '인도 수험생 대상 JEE·NEET 1:1 과외 매칭 플랫폼 개발',
+      'Plan / Class / Test 3단계 학습 플로우 UI 구현',
+      'React + TypeScript 기반 모바일 반응형 웹 개발',
+      'Java Thymeleaf 서버사이드 렌더링 페이지 개발 및 유지보수',
+      '이투스에듀 재직 중 해당 서비스 부서가 하이컨시로 분사·인수',
+    ],
+    tags: ['React', 'TypeScript', 'JavaScript', 'Java', 'Thymeleaf', 'HTML/CSS'],
     color: 'bg-yellow-100'
   },
-  {
-    id: 'research',
-    title: 'Frontend Developer',
-    company: 'Data Research Lab',
-    period: '2021 - 2022 (1 Year)',
-    domain: 'Research',
-    description: 'Developed interactive data visualization tools for academic and market research. Transformed complex datasets into intuitive web interfaces.',
-    tags: ['D3.js', 'Next.js', 'Research Tools', 'DataViz'],
-    color: 'bg-purple-100'
-  },
-  {
-    id: 'fintech',
-    title: 'Junior Frontend Developer',
-    company: 'Fintech Innovation',
-    period: '2020 - 2021 (1 Year)',
-    domain: 'Fintech',
-    description: 'Built core transaction modules and dashboard for a micro-investment platform. Leveraged Economics background for financial accuracy and UX.',
-    tags: ['Fintech', 'Chart.js', 'Secure UI', 'Economics'],
-    color: 'bg-blue-100'
-  }
 ];
 
 const App: React.FC = () => {
