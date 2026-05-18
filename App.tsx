@@ -68,6 +68,8 @@ const experiences: Experience[] = [
     images: [
       '/assets/images/rebit/01.png',
       '/assets/images/rebit/02.png',
+      '/assets/images/rebit/03.png',
+      '/assets/images/rebit/04.png',
     ],
     description: '핀테크 기반 상업용 부동산 조각투자 플랫폼 "Rebit" 프론트엔드 개발. 2021년 설립된 스타트업으로, 부동산 청약·거래 플랫폼의 PC 웹과 iOS·Android 앱 베타 버전을 개발하였으며, BNPL(Buy Now Pay Later) 서비스 사업도 함께 영위하였습니다.',
     highlights: [
