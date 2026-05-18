@@ -53,9 +53,10 @@ const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, 
               Frontend Engineer<br />
               <span className="text-black/60">× Economics</span>
             </h2>
-            <p className="hidden md:block mt-4 text-sm font-bold text-black max-w-[340px] leading-relaxed">
+            <p className="hidden md:block mt-4 text-sm font-bold text-black max-w-[340px] leading-relaxed break-keep">
               경제학과 졸업 후 금융 현장을 거쳐 개발자로 전향한,<br />
-              비즈니스와 사용자 경험을 함께 고민하는 5년차 프론트엔드 개발자입니다.
+              비즈니스와 사용자 경험을 함께 고민하는<br />
+              5년차 프론트엔드 개발자입니다.
             </p>
           </div>
         </div>
