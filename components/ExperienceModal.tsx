@@ -28,7 +28,7 @@ const ExperienceModal: React.FC<ExperienceModalProps> = ({ experience, onClose }
             <>
               <video
                 src={experience.videoUrl}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain bg-black"
                 autoPlay
                 muted
                 loop
