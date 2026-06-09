@@ -112,7 +112,7 @@ const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, 
                   <GraduationCap size={24} className="text-yellow-600" />
                 </div>
                 <h5 className="text-lg md:text-xl font-black mb-2 text-black">경제학 × 개발</h5>
-                <p className="text-xs md:text-sm text-black/70 font-bold leading-relaxed">경제학과 졸업 후 농협은행 방카슈랑스팀을 거쳐 개발자로 전향하였고, 금융 현장 경험을 바탕으로 핀테크·리서치·교육 도메인에 대한 이해도를 가지고 있습니다.</p>
+                <p className="text-xs md:text-sm text-black/70 font-bold leading-relaxed">경제학과 졸업 후 농협은행 방카슈랑스팀을 거쳐 개발자로 전향하였고, 핀테크·리서치·교육 도메인에 대한 이해도를 가지고 있습니다.</p>
               </div>
             </div>
 
