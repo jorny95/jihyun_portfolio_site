@@ -30,7 +30,7 @@ const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, 
           <Menu size={20} className="text-black" />
         </button>
         <div className="flex items-center flex-wrap gap-2 justify-end ml-auto">
-          {['Next.js', 'React', 'TypeScript', 'Fintech', 'EdTech', '5년차', 'AI 활용'].map((tag) => (
+          {['Next.js', 'React', 'TypeScript', 'Fintech', 'EduTech', '5년차', 'AI 활용'].map((tag) => (
             <span key={tag} className="whitespace-nowrap px-3 py-1 bg-white border-2 border-[#1a1a1a] rounded-full text-[10px] font-black text-black shadow-[1px_1px_0px_#1a1a1a]">
               {tag}
             </span>

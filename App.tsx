@@ -16,7 +16,7 @@ const experiences: Experience[] = [
     title: 'Frontend Engineer',
     company: '이투스에듀 / 하이컨시 (Hiconsy Edu Corporation)',
     period: '2024.07 ~ 재직중',
-    domain: 'EdTech',
+    domain: 'EduTech',
     companyLogo: '/assets/images/companies/hiconsy.png',
     serviceUrl: 'https://matchnow.in/',
     images: [

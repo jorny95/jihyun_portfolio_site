@@ -10,7 +10,7 @@ export interface Experience {
   images?: string[];
   videoUrl?: string;
   companyLogo?: string;
-  domain: 'Fintech' | 'Research' | 'EdTech' | 'Finance';
+  domain: 'Fintech' | 'Research' | 'EduTech' | 'Finance';
   tags: string[];
   color: string;
 }
