@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# bkit / claude internals
+.bkit/
+.claude/
+
+# macOS
+**/.DS_Store
