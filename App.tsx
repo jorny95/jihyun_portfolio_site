@@ -40,7 +40,7 @@ const experiences: Experience[] = [
       'RESTful API 연동 (Axios) — 튜터 매칭, 수업 예약, 사용자 인증 등 전 도메인 API 통신 구현',
       '이투스에듀 재직 중 해당 서비스 부서가 하이컨시로 분사·인수',
     ],
-    tags: ['React', 'TypeScript', 'Java', 'Thymeleaf', 'WebView Bridge', 'REST API', 'i18n'],
+    tags: ['React', 'TypeScript', 'Java', 'Thymeleaf', 'WebView Bridge', 'REST API', 'i18n', 'Claude Agent'],
     color: 'bg-yellow-100'
   },
   {
