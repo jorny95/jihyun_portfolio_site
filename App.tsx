@@ -115,7 +115,7 @@ const experiences: Experience[] = [
 ];
 
 const App: React.FC = () => {
-  const [activeView, setActiveView] = useState<ViewType>('About');
+  const [activeView, setActiveView] = useState<ViewType>('Overview');
   const [selectedExp, setSelectedExp] = useState<Experience | null>(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
