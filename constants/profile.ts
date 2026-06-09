@@ -1,11 +1,10 @@
 
-export const certifications = [
+export const certifications: { name: string; issuer: string; date: string; status: 'pass' | 'pending'; note?: string }[] = [
   {
     name: '정보처리기사',
     issuer: '한국산업인력공단',
-    date: '2026.06 취득 예정',
-    status: 'pending' as const,
-    note: '가채점 합격',
+    date: '2026.06 취득',
+    status: 'pass' as const,
   },
   {
     name: 'SQLD',
