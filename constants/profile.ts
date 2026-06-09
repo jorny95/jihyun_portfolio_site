@@ -29,6 +29,6 @@ export const certifications: { name: string; issuer: string; date: string; statu
 export const skills = [
   { name: 'HTML / CSS / JavaScript', progress: 90, color: 'bg-red-500' },
   { name: 'React / Next.js', progress: 95, color: 'bg-blue-500', desc: 'Core UI Architecture' },
-  { name: 'State Management', progress: 90, color: 'bg-yellow-500', desc: 'Context / Zustand' },
+  { name: '전역상태관리', progress: 90, color: 'bg-yellow-500', desc: 'Context / Zustand' },
   { name: 'Fullstack Bridge', progress: 85, color: 'bg-green-500', desc: 'Spring / Thymeleaf' },
 ];
