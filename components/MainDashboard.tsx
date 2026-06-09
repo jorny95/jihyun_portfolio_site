@@ -142,7 +142,7 @@ const MainDashboard: React.FC<MainDashboardProps> = ({ activeView, experiences, 
                   <BotMessageSquare size={24} className="text-purple-600" />
                 </div>
                 <h5 className="text-lg md:text-xl font-black mb-2 text-black">AI 활용 개발</h5>
-                <p className="text-xs md:text-sm text-black/70 font-bold leading-relaxed">AI 도구를 개발 워크플로우에 자연스럽게 녹여 생산성을 높입니다. 코드 작성부터 문제 해결까지 AI를 효율적으로 활용해 더 빠르고 정확하게 결과물을 만들어냅니다.</p>
+                <p className="text-xs md:text-sm text-black/70 font-bold leading-relaxed">Claude Agent 팀을 활용한 멀티 에이전트 개발 워크플로우를 실무에 도입해 생산성을 높입니다. 코드 작성부터 문제 해결까지 AI를 효율적으로 활용해 더 빠르고 정확하게 결과물을 만들어냅니다.</p>
               </div>
             </div>
           </div>
